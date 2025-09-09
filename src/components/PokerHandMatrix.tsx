@@ -23,8 +23,8 @@ const Item = styled(Paper, {
   padding: theme.spacing(1),
   textAlign: "center",
   color: "#fff",
-  height: 46,
-  width: 46,
+  height: 45,
+  width: 45,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -178,6 +178,7 @@ export default function PokerMatrix({
     <Box sx={{ display: "flex", justifyContent: "center", gap: 1 }}>
       <Box
         sx={{
+          p: 0.5,
           display: "grid",
           gridTemplateColumns: "repeat(13, 1fr)",
           gap: 0.75,
@@ -208,17 +209,16 @@ export default function PokerMatrix({
                     ? "error.dark"
                     : isLimpHand && showLimp
                     ? "success.light"
-                    : isFolded === null &&
-                      !isRaised &&
-                      !isPushHand &&
-                      !isLimpHand
-                    ? "gray"
-                    : "error.main"
+                    : isFolded
+                    ? "error.main"
+                    : "gray"
                 }
                 sx={{
                   overflow: "hidden",
                   letterSpacing: 1.15,
                   borderRadius: 2,
+                  boxShadow:
+                    row === col ? "0 0 3px 3px rgba(41, 60, 230, 1)" : "",
                   opacity: () => {
                     if ((isPushHand && showPush) || (isLimpHand && showLimp))
                       return 1;
@@ -233,8 +233,8 @@ export default function PokerMatrix({
                 {isPushHand && showPush && (
                   <Box
                     sx={{
-                      width: 12,
-                      height: 12,
+                      width: 10,
+                      height: 10,
                       borderRadius: 2,
                       position: "absolute",
                       bgcolor: "error.dark",
@@ -247,8 +247,8 @@ export default function PokerMatrix({
                 {isLimpHand && showLimp && (
                   <Box
                     sx={{
-                      width: 12,
-                      height: 12,
+                      width: 10,
+                      height: 10,
                       borderRadius: 2,
                       position: "absolute",
                       bgcolor: "success.light",
@@ -260,8 +260,8 @@ export default function PokerMatrix({
                 {isRaised && showRaise && (
                   <Box
                     sx={{
-                      width: 12,
-                      height: 12,
+                      width: 10,
+                      height: 10,
                       borderRadius: 2,
                       position: "absolute",
                       bgcolor: "warning.light",

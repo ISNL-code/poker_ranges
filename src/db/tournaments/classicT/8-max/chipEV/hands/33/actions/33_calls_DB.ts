@@ -4,7 +4,7 @@ export const _33_calls = {
     UTG1: null,
     LJ: null,
     HJ: null,
-    CO: null,
+    CO: { min_eff_stack: 23, max_eff_stack: 27 },
     BTN: { min_eff_stack: 23, max_eff_stack: 25 },
     SB: { min_eff_stack: 30, max_eff_stack: Infinity },
     BB: null,
