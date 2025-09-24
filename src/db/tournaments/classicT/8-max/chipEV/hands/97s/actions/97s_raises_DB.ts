@@ -5,8 +5,8 @@ export const _97s_raises = {
     LJ: null,
     HJ: null,
     CO: { min_eff_stack: 17, max_eff_stack: Infinity },
-    BTN: { min_eff_stack: 14, max_eff_stack: Infinity },
-    SB: { min_eff_stack: 9, max_eff_stack: Infinity },
+    BTN: { min_eff_stack: 6, max_eff_stack: Infinity },
+    SB: { min_eff_stack: 6, max_eff_stack: Infinity },
     BB: null,
   },
   open_push: {

@@ -218,7 +218,7 @@ export default function PokerMatrix({
                   letterSpacing: 1.15,
                   borderRadius: 2,
                   boxShadow:
-                    row === col ? "0 0 3px 3px rgba(41, 60, 230, 1)" : "",
+                    row === col ? `0 0 3px 3px rgba(41, 60, 230, 1)` : "",
                   opacity: () => {
                     if ((isPushHand && showPush) || (isLimpHand && showLimp))
                       return 1;
@@ -233,8 +233,8 @@ export default function PokerMatrix({
                 {isPushHand && showPush && (
                   <Box
                     sx={{
-                      width: 10,
-                      height: 10,
+                      width: 53,
+                      height: 6,
                       borderRadius: 2,
                       position: "absolute",
                       bgcolor: "error.dark",

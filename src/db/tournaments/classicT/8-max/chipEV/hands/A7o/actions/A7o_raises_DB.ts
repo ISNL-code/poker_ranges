@@ -4,9 +4,9 @@ export const A7o_raises = {
     UTG1: null,
     LJ: null,
     HJ: null,
-    CO: { min_eff_stack: 16, max_eff_stack: Infinity },
-    BTN: { min_eff_stack: 20, max_eff_stack: Infinity },
-    SB: { min_eff_stack: 20, max_eff_stack: Infinity },
+    CO: { min_eff_stack: 7, max_eff_stack: Infinity },
+    BTN: { min_eff_stack: 7, max_eff_stack: Infinity },
+    SB: { min_eff_stack: 7, max_eff_stack: Infinity },
     BB: null,
   },
   open_push: {

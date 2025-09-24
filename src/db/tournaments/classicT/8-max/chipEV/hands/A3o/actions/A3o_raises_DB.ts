@@ -5,8 +5,8 @@ export const A3o_raises = {
     LJ: null,
     HJ: null,
     CO: null,
-    BTN: { min_eff_stack: 17, max_eff_stack: Infinity },
-    SB: { min_eff_stack: 19, max_eff_stack: Infinity },
+    BTN: { min_eff_stack: 7, max_eff_stack: Infinity },
+    SB: { min_eff_stack: 7, max_eff_stack: Infinity },
     BB: null,
   },
   open_push: {

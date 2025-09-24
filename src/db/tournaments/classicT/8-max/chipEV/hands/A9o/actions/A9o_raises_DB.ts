@@ -2,11 +2,11 @@ export const A9o_raises = {
   open_raise: {
     UTG: null,
     UTG1: { min_eff_stack: 17, max_eff_stack: 40 },
-    LJ: { min_eff_stack: 14, max_eff_stack: 60 },
-    HJ: { min_eff_stack: 16, max_eff_stack: 100 },
-    CO: { min_eff_stack: 18, max_eff_stack: 100 },
-    BTN: { min_eff_stack: 22, max_eff_stack: 100 },
-    SB: { min_eff_stack: 20, max_eff_stack: Infinity },
+    LJ: { min_eff_stack: 6, max_eff_stack: 60 },
+    HJ: { min_eff_stack: 6, max_eff_stack: 100 },
+    CO: { min_eff_stack: 6, max_eff_stack: 100 },
+    BTN: { min_eff_stack: 6, max_eff_stack: 100 },
+    SB: { min_eff_stack: 6, max_eff_stack: Infinity },
     BB: null,
   },
   open_push: {
